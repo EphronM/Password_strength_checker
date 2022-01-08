@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, render_template, url_for
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('logm_model.pkl','rb'))
+model = pickle.load(open('xgb_classifer.pkl','rb'))
 
 def word_div_char(word):
   chars =[]
