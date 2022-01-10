@@ -11,9 +11,6 @@ def word_div_char(word):
     chars.append(char)
   return chars
 
-word_div_char = word_div_char()
-
-vectorizer = pickle.load(open('vectorizer.pkl','rb'))
 
 @app.route('/')
 def home():
@@ -48,13 +45,7 @@ def predict():
     return render_template('home.html', prediction_text=f'Your Password " {rawdata} " has strength of {score[0]}')
 
 if __name__ == '__main__':
-  
-  def word_div_char(word):
-    chars =[]
-    for char in word:
-      chars.append(char)
-    return chars
-  
+   
   vectorizer = pickle.load(open('vectorizer.pkl','rb'))
   
   app.run(debug=True) 
