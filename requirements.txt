@@ -16,3 +16,4 @@ cloudpickle>=0.6.0
 scikit-learn
 joblib==0.14.0
 xgboost
+nltk
