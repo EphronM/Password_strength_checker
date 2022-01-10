@@ -48,9 +48,9 @@ def predict():
 if __name__ == '__main__':
   
   def word_div_char(word):
-  chars =[]
-  for char in word:
-    chars.append(char)
-  return chars
+    chars =[]
+    for char in word:
+      chars.append(char)
+    return chars
 
   app.run(debug=True) 
