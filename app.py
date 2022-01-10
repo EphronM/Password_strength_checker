@@ -46,4 +46,11 @@ def predict():
     return render_template('home.html', prediction_text=f'Your Password " {rawdata} " has strength of {score[0]}')
 
 if __name__ == '__main__':
-    app.run(debug=True) 
+  
+  def word_div_char(word):
+  chars =[]
+  for char in word:
+    chars.append(char)
+  return chars
+
+  app.run(debug=True) 
