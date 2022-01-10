@@ -11,7 +11,7 @@ def word_div_char(word):
     chars.append(char)
   return chars
 
-vectorizer = pickle.load(open('vectorizer.pkl','rb'))
+
 
 @app.route('/')
 def home():
@@ -52,5 +52,7 @@ if __name__ == '__main__':
     for char in word:
       chars.append(char)
     return chars
-
+  
+  vectorizer = pickle.load(open('vectorizer.pkl','rb'))
+  
   app.run(debug=True) 
