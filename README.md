@@ -1,7 +1,8 @@
 # Password_strength_checker
 Allows the user to check the password strength
 
-https://passwordstrengthnlp.herokuapp.com/
+[Site Link](https://passwordstrengthnlp.herokuapp.com/)
+
 
 The model classify each password based on the combination of words and character. More special character included, more the strength
 
